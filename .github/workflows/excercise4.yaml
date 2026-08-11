@@ -1,0 +1,15 @@
+name: My First Workflow
+
+on:
+  pull_request:
+      branches:
+        - dev 
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Message
+        run: echo "pull  request?"
+      
