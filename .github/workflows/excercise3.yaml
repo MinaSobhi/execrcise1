@@ -1,0 +1,16 @@
+name: My First Workflow
+
+on:
+  push:
+      branches:
+          - dev
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Show Message
+        run: echo "Hello how are you ?"
+      - name: ping test
+        run: ping -c 4 google.com
+        
